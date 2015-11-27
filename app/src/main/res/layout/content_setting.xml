@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+    <ScrollView
+        android:background="?attr/bgColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="?attr/bgColor"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Switch
+                android:textColor="?attr/textColor"
+                android:id="@+id/sw_night"
+                android:text="夜间模式"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <Switch
+                android:textColor="?attr/textColor"
+                android:checked="true"
+                android:id="@+id/sw_js"
+                android:text="网页JS开关"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#949494"/>
+            <TextView
+                android:textColor="?attr/textColor"
+                android:layout_marginTop="20dp"
+                android:text="关于我"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/icon_email"
+                    android:src="@drawable/ic_email_black_18dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="lxxydyself@gmail.com"
+                    android:autoLink="email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/icon_email"
+                    android:layout_alignBottom="@+id/icon_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/icon_link"
+                    android:src="@drawable/ic_link_black_18dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="http://www.lxxself.com"
+                    android:autoLink="web"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/icon_link"
+                    android:layout_alignBottom="@+id/icon_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/icon_github"
+                    android:src="@drawable/ic_github"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:text="https://github.com/lxxself"
+                    android:autoLink="web"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/icon_github"
+                    android:layout_alignBottom="@+id/icon_github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

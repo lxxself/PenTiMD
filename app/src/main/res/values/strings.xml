@@ -1,0 +1,8 @@
+<resources>
+    //menu
+    <string name="app_name">喷嚏MD</string>
+    <string name="action_settings">设置</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_share">分享</string>
+    <string name="action_out">浏览器打开</string>
+</resources>
