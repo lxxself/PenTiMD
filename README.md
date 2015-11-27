@@ -24,3 +24,9 @@
     compile files('libs/jsoup-1.8.3.jar')
     compile 'com.umeng.analytics:analytics:latest.integration'
 ```
+
+##软件截图
+
+![](https://github.com/lxxself/PenTiMD/blob/master/device-2015-11-26-220901.png)
+![](https://github.com/lxxself/PenTiMD/blob/master/device-2015-11-26-221015.png)
+![](https://github.com/lxxself/PenTiMD/blob/master/device-2015-11-27-140110.png)
